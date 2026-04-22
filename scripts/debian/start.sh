@@ -12,6 +12,6 @@ echo "################################################### `date +%Y-%m-%d` `date
 
 while true; do
     echo "`date +%Y-%m-%d` `date +%H:%M:%S` ${HostName} .." > /tmp/start.log
-    netstat -tunlp | sort -n -k4.2 | grep "LISTEN" > /tmp/start.log
+    netstat -tunlp | sort -n -k4.2 | grep "LISTEN" >> /tmp/start.log
     sleep 3
 done
