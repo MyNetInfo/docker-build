@@ -1,12 +1,17 @@
-FROM debian:12
+# 1.0
+FROM debian:11
 
 WORKDIR /root
 COPY .  /root
 
-RUN apt-get update \
+RUN apt-get -y clean \
+    && apt-get -y update
+    && apt-get -y upgrade
+    && apt-get -y autoremove
+    && apt-get -y install curl \
+    && apt-get -y install wget \
     && apt-get -y install openssh-server \
-    && rm -rf /root/Dockerfile \
-    && chmod -R 0700 /root/*.sh \
     && echo "root:12345678" | chpasswd
+    && wget -O /root/init.sh https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/init.sh && chmod -R 0700 /root/*.sh && /root/init.sh
 
-CMD ["/root/start.sh"]
+CMD ["/root/shell/start.sh"]
