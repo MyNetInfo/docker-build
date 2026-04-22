@@ -14,7 +14,7 @@ chmod -R 0700 /root/*.sh
 chmod -R 0700 /root/shell/*.sh
 chmod -R 0400 /root/.ssh/authorized_keys
 
-# 安装
+# 初始化
 /root/shell/install.sh
 
 # 清理
