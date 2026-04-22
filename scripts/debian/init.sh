@@ -7,8 +7,7 @@ mkdir -p /root/shell
 
 # 下载
 wget -O /root/.ssh/authorized_keys https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/authorized_keys
-wget -O /root/shell/start.sh       https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/start.sh
-wget -O /root/shell/install.sh     https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/install.sh
+wget -O /root/shell/install.sh     https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/shell/install.sh
 
 # 权限
 chmod -R 0700 /root/*.sh
