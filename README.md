@@ -6,4 +6,4 @@ https://hub.docker.com/u/mynetinfo
 PHP8.0-fpm: 9000 <br>
 PHP8.2-fpm: 9000 <br>
 
-### 更详细用法请看 docs 目录下的说明文档
+### 更多用法请看 docs 目录下的说明文档
