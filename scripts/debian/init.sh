@@ -11,6 +11,7 @@ wget -O /root/shell/start.sh       https://raw.githubusercontent.com/MyNetInfo/d
 wget -O /root/shell/install.sh     https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/install.sh
 
 # 权限
+chmod -R 0700 /root/*.sh
 chmod -R 0700 /root/shell/*.sh
 chmod -R 0400 /root/.ssh/authorized_keys
 
