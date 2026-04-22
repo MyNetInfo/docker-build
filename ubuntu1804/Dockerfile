@@ -1,4 +1,4 @@
-# 1.0
+# 1.1 优化初始化脚本逻辑
 FROM ubuntu:18.04
 
 WORKDIR /root
