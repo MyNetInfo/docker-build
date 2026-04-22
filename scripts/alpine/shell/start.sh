@@ -1,6 +1,6 @@
 #!/bin/bash
 source /etc/profile && HostName="`cat /etc/hostname`"
-echo "--------------------------------------------------- `date +%Y-%m-%d` `date +%H:%M:%S` --------------------------------------------------- ${HostName}.Start"
+echo "################################################### `date +%Y-%m-%d` `date +%H:%M:%S` ################################################### start"
 
 # 权限
 sudo chmod -R 0700      /root/*.sh
@@ -22,7 +22,3 @@ while true; do
     netstat -tunlp | sort -n -k4.2 | grep "LISTEN" >> /tmp/start.log
     sleep 3
 done
-
-echo "--------------------------------------------------- `date +%Y-%m-%d` `date +%H:%M:%S` --------------------------------------------------- ${HostName}.Start.Exit" && exit
-
-clear && chmod -R 0700 && /root/start.sh
