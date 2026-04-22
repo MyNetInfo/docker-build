@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'ubuntu1804/**'
+      - 'scripts/debian/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/ubuntu1804

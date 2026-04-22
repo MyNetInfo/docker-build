@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'debian13/**'
+      - 'scripts/debian/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/debian13

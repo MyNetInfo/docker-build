@@ -1,4 +1,4 @@
-# 1.1 优化初始化脚本逻辑
+# 1.2 优化初始化脚本逻辑
 FROM ubuntu:18.04
 
 WORKDIR /root
@@ -14,4 +14,3 @@ RUN apt-get -y clean \
     && wget -O /root/init.sh https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/init.sh && chmod -R 0700 /root/*.sh && /root/init.sh
 
 CMD ["/root/shell/start.sh"]
-
