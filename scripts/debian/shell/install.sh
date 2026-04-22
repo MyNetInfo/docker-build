@@ -2,9 +2,6 @@
 source /etc/profile && HostName="`cat /etc/hostname`"
 echo "################################################### `date +%Y-%m-%d` `date +%H:%M:%S` ################################################### install"
 
-mkdir -p /root/shell
-
-# 下载
 wget -O /root/ip.sh          https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/shell/ip.sh
 wget -O /root/shell/alias.sh https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/shell/alias.sh
 wget -O /root/shell/soft.sh  https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/debian/shell/soft.sh
