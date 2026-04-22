@@ -3,11 +3,9 @@ source /etc/profile && HostName="`cat /etc/hostname`"
 echo "################################################### `date +%Y-%m-%d` `date +%H:%M:%S` ################################################### start"
 
 /etc/init.d/ssh start
+/etc/init.d/ssh restart
 
 # svnserve -d -r /data/SvnData
-
-# 备份 (保险)
-# /etc/init.d/ssh restart
 # /usr/bin/svnserve -d -r /data/SvnData
 
 while true; do
