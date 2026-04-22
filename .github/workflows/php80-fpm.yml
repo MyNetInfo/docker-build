@@ -1,11 +1,9 @@
-# 003
 name: Build php80-fpm
 
 on:
   push:
     paths:
       - 'php80-fpm/**'
-      - '.github/workflows/php80-fpm.yml
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/php80-fpm
