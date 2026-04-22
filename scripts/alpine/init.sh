@@ -5,7 +5,7 @@ echo "################################################### `date +%Y-%m-%d` `date
 mkdir -p /root/.ssh
 mkdir -p /root/shell
 
-# 下载
+# 下载 - 该自增编号来自动发布: 001
 wget -O /root/.ssh/authorized_keys https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/authorized_keys
 wget -O /root/shell/install.sh     https://raw.githubusercontent.com/MyNetInfo/docker-build/refs/heads/main/scripts/alpine/shell/install.sh
 
