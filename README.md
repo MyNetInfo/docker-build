@@ -1,6 +1,6 @@
 ### 默认端口
-PHP8.0-fpm: 9000
-PHP8.2-fpm: 9000
+# PHP8.0-fpm: 9000
+# PHP8.2-fpm: 9000
 
 ### Docker Hub 地址
 https://hub.docker.com/u/mynetinfo
