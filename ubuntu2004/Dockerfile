@@ -1,4 +1,3 @@
-# 1.2 优化初始化脚本逻辑
 FROM ubuntu:20.04
 
 WORKDIR /root
