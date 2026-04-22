@@ -1,5 +1,5 @@
 
-# 如果是 windows 可将以下代码保存为 debian.bat 文件后执行
+# 如果是 windows 可将以下代码保存为 ubuntu.bat 文件后执行
 
 set RunParams= -itd --restart=always --cpus=0.2 --memory=256m --network LdMain -v /etc/localtime:/etc/localtime:ro
 
