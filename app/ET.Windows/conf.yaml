@@ -1,0 +1,30 @@
+instance_name = "LdRemote"
+dhcp = false
+ipv4 = "10.6.6.10/24"
+listeners = [
+    "tcp://0.0.0.0:1234",
+]
+tcp_whitelist = []
+udp_whitelist = []
+
+[network_identity]
+network_name = "LdRemote"
+network_secret = "0123456789"
+
+[[peer]]
+uri = "tcp://et1.xxx.com:1234"
+[[peer]]
+uri = "tcp://et2.xxx.com:1234"
+[[peer]]
+uri = "tcp://et3.xxx.com:1234"
+
+[flags]
+private_mode = true
+latency_first = true
+enable_exit_node = false
+enable_kcp_proxy = true
+enable_quic_proxy = true
+use_smoltcp = true
+relay_all_peer_rpc = true
+proxy_forward_by_system = true
+disable_udp_hole_punching = true
