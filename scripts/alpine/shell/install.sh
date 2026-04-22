@@ -18,3 +18,7 @@ chmod -R 0400 /root/.ssh/authorized_keys
 /root/shell/ssh.sh
 /root/shell/alias.sh
 /root/shell/soft.sh
+
+# 设置默认 shell
+sh -s /bin/bash
+chsh -s /bin/bash
