@@ -1,6 +1,0 @@
-
-# 参数写法.Win10
-C:\EasyTierWindows\conf.yaml
-
-# 参数写法.Win2012
--c C:\EasyTierWindows\conf.yaml
