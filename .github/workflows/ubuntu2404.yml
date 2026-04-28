@@ -3,7 +3,7 @@ name: Build ubuntu2404
 on:
   push:
     paths:
-      - 'ubuntu2404/**'
+      - 'ubuntu/2404/**'
       - 'scripts/debian/**'
 
 env:
@@ -28,7 +28,7 @@ jobs:
       - name: BuildAndPushDockerImage
         uses: docker/build-push-action@v6
         with:
-          context: ./ubuntu2404 # 构建上下文，即 Dockerfile 所在的目录
+          context: ./ubuntu/2404 # 构建上下文，即 Dockerfile 所在的目录
           push: true            # 构建完成后推送到仓库
           tags: |
             ${{ env.IMAGE_NAME }}:1.0

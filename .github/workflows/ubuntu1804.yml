@@ -3,7 +3,7 @@ name: Build ubuntu1804
 on:
   push:
     paths:
-      - 'ubuntu1804/**'
+      - 'ubuntu/1804/**'
       - 'scripts/debian/**'
 
 env:
@@ -28,7 +28,7 @@ jobs:
       - name: BuildAndPushDockerImage
         uses: docker/build-push-action@v6
         with:
-          context: ./ubuntu1804 # 构建上下文，即 Dockerfile 所在的目录
+          context: ./ubuntu/1804 # 构建上下文，即 Dockerfile 所在的目录
           push: true            # 构建完成后推送到仓库
           tags: |
             ${{ env.IMAGE_NAME }}:1.0
