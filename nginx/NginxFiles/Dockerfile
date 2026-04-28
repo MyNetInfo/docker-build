@@ -14,7 +14,6 @@ RUN apk update \
     && apk upgrade \
     && apk add --no-cache iputils net-tools \
     && apk cache clean \
-    && sed -i "s/XXX/XXX/g" /etc/nginx/nginx.conf \
     && sed -i "s/\/run\/nginx.pid/\/tmp\/nginx.pid/g" /etc/nginx/nginx.conf \
     && sed -i "s/\/var\/log\/nginx\/error.log/\/tmp\/error.log/g" /etc/nginx/nginx.conf \
     && sed -i "s/\/var\/log\/nginx\/access.log/\/tmp\/access.log/g" /etc/nginx/nginx.conf \
