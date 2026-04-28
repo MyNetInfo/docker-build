@@ -3,7 +3,7 @@ name: Build php82-fpm
 on:
   push:
     paths:
-      - 'php82-fpm/**'
+      - 'php/82-fpm/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/php82-fpm
@@ -27,7 +27,7 @@ jobs:
       - name: BuildAndPushDockerImage
         uses: docker/build-push-action@v6
         with:
-          context: ./php82-fpm # 构建上下文，即 Dockerfile 所在的目录
+          context: ./php/82-fpm # 构建上下文，即 Dockerfile 所在的目录
           push: true           # 构建完成后推送到仓库
           tags: |
             ${{ env.IMAGE_NAME }}:1.0
