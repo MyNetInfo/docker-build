@@ -3,6 +3,9 @@ FROM nginx:1.28-alpine
 ENV TZ=Asia/Shanghai
 
 COPY default.conf /aaa/
+COPY Stream/      /aaa/Stream/
+COPY StreamConf/  /aaa/StreamConf/
+
 COPY default.conf /etc/nginx/conf.d/
 COPY Stream/      /etc/nginx/conf.d/Stream/
 COPY StreamConf/  /etc/nginx/conf.d/StreamConf/
