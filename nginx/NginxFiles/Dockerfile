@@ -18,5 +18,4 @@ RUN apk update \
     && sed -i "s/\/run\/nginx.pid/\/tmp\/nginx.pid/g" /etc/nginx/nginx.conf \
     && sed -i "s/\/var\/log\/nginx\/error.log/\/tmp\/error.log/g" /etc/nginx/nginx.conf \
     && sed -i "s/\/var\/log\/nginx\/access.log/\/tmp\/access.log/g" /etc/nginx/nginx.conf \
-    && echo "include /etc/nginx/conf.d/Stream/stream.conf;" >> /etc/nginx/nginx.conf \
-    && ping -c 6 baidu.com
+    && echo "include /etc/nginx/conf.d/Stream/stream.conf;" >> /etc/nginx/nginx.conf
