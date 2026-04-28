@@ -3,7 +3,7 @@ name: Build Alpine322
 on:
   push:
     paths:
-      - 'Alpine322/**'
+      - 'Alpine/322/**'
       - 'scripts/alpine/**'
 
 env:
@@ -28,7 +28,7 @@ jobs:
       - name: BuildAndPushDockerImage
         uses: docker/build-push-action@v6
         with:
-          context: ./Alpine322 # 构建上下文，即 Dockerfile 所在的目录
+          context: ./Alpine/322 # 构建上下文，即 Dockerfile 所在的目录
           push: true          # 构建完成后推送到仓库
           tags: |
             ${{ env.IMAGE_NAME }}:1.0
