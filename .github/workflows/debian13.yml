@@ -3,7 +3,7 @@ name: Build debian13
 on:
   push:
     paths:
-      - 'debian13/**'
+      - 'debian/13/**'
       - 'scripts/debian/**'
 
 env:
@@ -28,7 +28,7 @@ jobs:
       - name: BuildAndPushDockerImage
         uses: docker/build-push-action@v6
         with:
-          context: ./debian13 # 构建上下文，即 Dockerfile 所在的目录
+          context: ./debian/13 # 构建上下文，即 Dockerfile 所在的目录
           push: true          # 构建完成后推送到仓库
           tags: |
             ${{ env.IMAGE_NAME }}:1.0
