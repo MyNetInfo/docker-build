@@ -3,6 +3,7 @@ name: Build php80-fpm
 on:
   push:
     paths:
+      - 'scripts/**'
       - 'php/80-fpm/**'
 
 env:

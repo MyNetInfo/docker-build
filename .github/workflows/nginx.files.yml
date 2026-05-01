@@ -3,8 +3,8 @@ name: Build nginxfiles
 on:
   push:
     paths:
+      - 'scripts/**'
       - 'nginx/NginxFiles/**'
-      - 'scripts/debian/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/nginxfiles

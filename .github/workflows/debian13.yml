@@ -3,8 +3,8 @@ name: Build debian13
 on:
   push:
     paths:
+      - 'scripts/**'
       - 'debian/13/**'
-      - 'scripts/debian/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/debian13

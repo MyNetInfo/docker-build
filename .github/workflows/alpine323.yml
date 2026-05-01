@@ -3,8 +3,8 @@ name: Build Alpine323
 on:
   push:
     paths:
+      - 'scripts/**'
       - 'Alpine/323/**'
-      - 'scripts/alpine/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/alpine323

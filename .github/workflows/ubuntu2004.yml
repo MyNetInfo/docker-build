@@ -3,8 +3,8 @@ name: Build ubuntu2004
 on:
   push:
     paths:
+      - 'scripts/**'
       - 'ubuntu/2004/**'
-      - 'scripts/debian/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/ubuntu2004
