@@ -13,6 +13,6 @@ chmod -R 0700 /root/shell/*.sh
 chmod -R 0400 /root/.ssh/authorized_keys
 
 # 初始化
-/root/shell/ssh.sh
 /root/shell/alias.sh
+/root/shell/ssh.sh
 /root/shell/soft.sh
