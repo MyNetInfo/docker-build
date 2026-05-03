@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'scripts/**'
-      - 'ubuntu/2204/**'
+      - 'ubuntu/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/ubuntu2204

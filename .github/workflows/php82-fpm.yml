@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'scripts/**'
-      - 'php/82-fpm/**'
+      - 'php/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/php82-fpm

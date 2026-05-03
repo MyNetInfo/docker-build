@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'scripts/**'
-      - 'Alpine/322/**'
+      - 'Alpine/**'
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKER_USER_NAME }}/alpine322
