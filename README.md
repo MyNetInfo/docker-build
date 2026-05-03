@@ -7,6 +7,8 @@ https://hub.docker.com/u/mynetinfo
 2、默认启动了 svn 服务 (3690端口), 容器只要映射了 3690 端口就可以连接 svn 服务
 3、启动 sshd 服务, 并配置了远程访问, 容器只要映射了 22 端口就可以远程连接 ssh 服务
 
+开机启动脚本如下 https://github.com/MyNetInfo/docker-build/tree/main/scripts/debian/shell
+
 ### 其中 80-fpm、80-fpm 包含了以下扩展, 默认端口 9000
 apt-get install -y iputils-ping zlib1g-dev git <br>
 apt-get install -y libcurl4-openssl-dev libzip-dev unzip <br>
