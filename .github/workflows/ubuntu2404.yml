@@ -28,8 +28,8 @@ jobs:
       - name: BuildAndPushDockerImage
         uses: docker/build-push-action@v6
         with:
-          context: ./ubuntu/2404 # 构建上下文，即 Dockerfile 所在的目录
-          push: true             # 构建完成后推送到仓库
+          context: ./OS/Ubuntu2404 # 构建上下文，即 Dockerfile 所在的目录
+          push: true               # 构建完成后推送到仓库
           tags: |
             ${{ env.IMAGE_NAME }}:1.0
             ${{ env.IMAGE_NAME }}:${{ github.ref_name }}
