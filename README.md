@@ -24,3 +24,5 @@ pecl install mongodb  && docker-php-ext-enable mongodb <br>
 docker-php-ext-configure gd --with-freetype --with-jpeg && docker-php-ext-install -j$(nproc) gd <br>
 
 ### 更多用法请看 docs 目录下的说明文档
+https://github.com/MyNetInfo/docker-build/tree/main/docs
+
