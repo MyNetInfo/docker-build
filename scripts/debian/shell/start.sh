@@ -18,7 +18,10 @@ chown -R root:root /root/scripts
 
 # 启动服务
 svnserve -d -r /data/SvnData
-# /usr/bin/svnserve -d -r /data/SvnData
+/usr/bin/svnserve -d -r /data/SvnData
+
+# 开机脚本 (默认没有这个文件,后续自行补充)
+/root/scripts/start.sh
 
 while true; do
     echo "`date +%Y-%m-%d` `date +%H:%M:%S` ${HostName} .." > /tmp/start.log
